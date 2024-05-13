@@ -1,0 +1,110 @@
+.anime-genre-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.genre-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.genre-card-container :hover {
+  background-color: #494f55;
+}
+
+.genre-card {
+  width: 250px;
+  height: auto;
+  margin: 20px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.genre-card Img {
+  width: 230px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.genre-card h3 {
+  margin-top: 10px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 80px;
+  justify-content: center;
+}
+
+.load-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+.load-button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.load-button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.load-button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.load-button:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+p {
+  color: white;
+  text-align: center;
+}

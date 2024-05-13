@@ -1,0 +1,80 @@
+.schedules-container {
+  color: white;
+  line-height: 1.6;
+}
+
+.schedules-container .today-anime {
+  font-size: 2.3vw;
+  margin-bottom: 20px;
+}
+
+.schedules-container span {
+  color: gray;
+  font-size: 1.3vw;
+}
+
+/* ////......Media query......//// */
+
+@media (max-width: 500px) {
+  .schedules-container {
+    color: white;
+    margin: 200px 0 0 0;
+    line-height: 1.6;
+  }
+  .schedules-container .today-anime {
+    font-size: 5vw;
+    margin-bottom: 20px;
+  }
+  .schedules-container span {
+    color: gray;
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .schedules-container {
+    color: white;
+    margin: 200px 0 0 10px;
+    line-height: 1.6;
+  }
+  .schedules-container .today-anime {
+    font-size: 5vw;
+    margin-bottom: 20px;
+  }
+  .schedules-container span {
+    color: gray;
+    font-size: 2.6vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .schedules-container {
+    color: white;
+    margin: 200px 0 0 0;
+    line-height: 1.6;
+  }
+  .schedules-container .today-anime {
+    font-size: 5vw;
+    margin-bottom: 20px;
+  }
+  .schedules-container span {
+    color: gray;
+    font-size: 2.6vw;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .schedules-container {
+    color: white;
+    margin: 200px 0 0 0;
+    line-height: 1.6;
+  }
+  .schedules-container .today-anime {
+    font-size: 5vw;
+    margin-bottom: 20px;
+  }
+  .schedules-container span {
+    color: gray;
+    font-size: 5vw;
+  }
+}

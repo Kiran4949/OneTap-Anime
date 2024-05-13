@@ -1,0 +1,193 @@
+.loading-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 20px 0 20px;
+}
+
+.watch-online-dub-container {
+  padding: 150px 0 0 0;
+}
+
+.anime-title {
+  color: white;
+  text-align: center;
+  background-color: #ff7c00;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2em;
+}
+
+.watch-online-container {
+  display: flex;
+  padding: 100px 20px 0 20px;
+}
+
+.playback-section {
+  flex: 1;
+}
+
+.playback-section h4,
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.playback-section h4 {
+  margin-bottom: 20px;
+}
+
+.playback-section .video-player {
+  width: 640px;
+  height: 360px;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.playback-section .episode-loading {
+  color: white;
+  text-align: center;
+  background-color: #df0b0b;
+}
+
+.playback-section .next-episode {
+  margin-top: 10px;
+
+  background-color: #ff7c00;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.playback-section .next-episode span {
+  cursor: pointer;
+}
+
+.dub-episodes h2 {
+  background-color: #ff7c00;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dub-episodes {
+  margin: 50px;
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.dub-episodes ul {
+  margin-top: 10px;
+}
+
+.dub-episodes ul li {
+  border-bottom: 1px dashed #df0b0b;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.dub-episodes ul li:hover {
+  background-color: #ff7c00;
+}
+
+.dub-episodes ul li .episode-list-loading {
+  color: white;
+  text-align: center;
+  background-color: #df0b0b;
+}
+
+/* ////......Media query......//// */
+
+@media (max-width: 500px) {
+  .anime-title {
+    color: white;
+    text-align: center;
+    background-color: #ff7c00;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2em;
+  }
+
+  .watch-online-container {
+    flex-direction: column;
+  }
+
+  .playback-section .video-player {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .dub-episodes h2 {
+    background-color: #ff7c00;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .watch-online-dub-container {
+    text-align: center;
+  }
+  .watch-online-container {
+    flex-direction: column;
+  }
+
+  .playback-section .video-player {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .dub-episodes h2 {
+    background-color: #ff7c00;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .watch-online-dub-container {
+    text-align: center;
+  }
+  .watch-online-container {
+    flex-direction: column;
+  }
+
+  .playback-section .video-player {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .watch-online-dub-container {
+    text-align: center;
+  }
+  .watch-online-container {
+    flex-direction: column;
+  }
+
+  .playback-section .video-player {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}

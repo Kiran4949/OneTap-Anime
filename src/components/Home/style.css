@@ -1,0 +1,21 @@
+h1 {
+  color: white;
+  padding: 20px;
+}
+
+.home-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container .topupcominganime-container {
+  margin-bottom: 30px;
+}
+
+.home-container .spotlightanime-container {
+  margin-bottom: 30px;
+}
+
+.home-container .topupcominganime-container h1 {
+  font-size: 30px;
+}
