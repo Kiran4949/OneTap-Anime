@@ -32,7 +32,7 @@ const Home = () => {
     <>
       <BackgroundPoster />
       <div className="home-container">
-        <div>
+        <div className="trendinganime-container">
           <h1>Trending Animes</h1>
           <Api url="https://api-aniwatch.onrender.com/anime/home" onDataFetch={handleDataFetchTrendingAnimes} />
           <Carousel animeData={trendingAnimes} />

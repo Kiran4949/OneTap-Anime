@@ -29,8 +29,10 @@
 }
 
 .poster-content p {
-  font-size: 2.6vw;
+  font-size: 3vw;
+  margin-top: 90px;
   margin-bottom: 30px;
+  font-weight: 550;
   white-space: nowrap;
 }
 
@@ -61,19 +63,24 @@
   border-radius: 51%;
   border: none;
   position: absolute;
-  top: 50%;
-  right: 5px;
+  top: 51%;
+  right: 37px;
   transform: translateY(-50%);
   background: green;
   color: #fff;
 }
 
-/* ////......Media query......//// */
+/* Media Queries */
 
 @media (max-width: 500px) {
+  .background-poster {
+    background-size: cover;
+    height: 50vh;
+  }
+
   .poster-content p {
-    font-size: 3.5vw;
-    font-weight: 300;
+    font-size: 4vw;
+    margin-top: 90px;
   }
 
   .poster-content .search-box input[type="text"] {
@@ -85,17 +92,50 @@
   .poster-content .search-box button {
     width: 30px;
     height: 30px;
+    right: 5px;
   }
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
+  .background-poster {
+    background-size: cover;
+    height: 50vh;
+  }
+
+  .poster-content p {
+    font-size: 4.5vw;
+    margin-top: 90px;
+  }
+
   .poster-content .search-box input[type="text"] {
     width: 600px;
+  }
+
+  .poster-content .search-box button {
+    width: 35px;
+    height: 35px;
+    right: 70px;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
+  .background-poster {
+    background-size: cover;
+    height: 50vh;
+  }
+
+  .poster-content p {
+    font-size: 3.5vw;
+    margin-top: 90px;
+  }
+
   .poster-content .search-box input[type="text"] {
     width: 550px;
+  }
+
+  .poster-content .search-box button {
+    width: 35px;
+    height: 35px;
+    right: 34px;
   }
 }
