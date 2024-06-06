@@ -121,7 +121,8 @@ const WatchOnlineSub = () => {
     }
   }, []);
 
-  const handleMobileVideoInteraction = useCallback(() => {
+  const handleMobileVideoInteraction = useCallback((event) => {
+    event.preventDefault();
     handleVideoInteraction();
   }, [handleVideoInteraction]);
 

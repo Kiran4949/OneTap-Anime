@@ -42,7 +42,7 @@ const BackgroundPoster = () => {
   return (
     <div className="background-poster" style={{ backgroundImage: poster ? `url(${poster})` : "none" }}>
       <div className="poster-content">
-        <p>Millions of Animes and Movies. Explore now</p>
+        <p className="text">Millions of Animes and Movies. Explore now</p>
         <div className="search-box">
           <form onSubmit={handleSubmit}>
             <input type="text" name="search" id="srch" placeholder="Find your favorite anime by name" value={searchValue} onChange={handleSearchChange} required />
